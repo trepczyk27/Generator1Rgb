@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
 
     <TextView
         android:layout_width="wrap_content"
@@ -14,12 +15,14 @@
         android:textSize="30dp"
         android:id="@+id/txt1"
         />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:background="@color/black"
+        android:id="@+id/txt2"
+        android:layout_width="250dp"
+
+        android:layout_height="250dp"
         android:layout_below="@id/txt1"
-        android:id="@+id/txt2"/>
+        android:layout_centerHorizontal="true" />
 
 
     <TextView
@@ -80,5 +83,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/s3"
         android:layout_marginTop="30dp"
-        android:text="LOSUJ"/>
+        android:text="LOSUJ"
+        android:id="@+id/losuj"
+        android:onClick="losuj"/>
 </RelativeLayout>
