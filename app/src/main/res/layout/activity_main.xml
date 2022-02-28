@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generator RGB"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:id="@+id/txt1"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@color/black"
+        android:layout_below="@id/txt1"
+        android:id="@+id/txt2"/>
+
+
+    <TextView
+        android:id="@+id/R"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="R"
+        android:textSize="25dp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt2"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="22dp"
+        android:id="@+id/s1"/>
+    <TextView
+        android:id="@+id/G"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/R"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="G"
+        android:textSize="25dp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/R"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="22dp"
+        android:id="@+id/s2"/>
+
+    <TextView
+        android:id="@+id/B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/G"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="B"
+        android:textSize="25dp" />
+
+    <SeekBar
+        android:id="@+id/s3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/G"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="22dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/s3"
+        android:layout_marginTop="30dp"
+        android:text="LOSUJ"/>
+</RelativeLayout>
