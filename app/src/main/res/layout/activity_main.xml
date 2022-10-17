@@ -8,15 +8,14 @@
     >
 
     <TextView
+        android:id="@+id/txt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Generator RGB"
         android:layout_centerHorizontal="true"
-        android:textSize="30dp"
-        android:id="@+id/txt1"
-        />
+        android:text="Edytuj zdjecie"
+        android:textSize="30dp" />
 
-    <TextView
+    <ImageView
         android:id="@+id/txt2"
         android:layout_width="250dp"
 
@@ -77,13 +76,14 @@
         android:layout_below="@id/G"
         android:layout_marginLeft="25dp"
         android:layout_marginTop="22dp" />
+
     <Button
+        android:id="@+id/losuj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/s3"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:text="LOSUJ"
-        android:id="@+id/losuj"
-        android:onClick="losuj"/>
+        android:onClick="losuj"
+        android:text="wczytaj zdjecie" />
 </RelativeLayout>
