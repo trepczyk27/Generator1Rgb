@@ -21,8 +21,9 @@ public class MainActivity extends AppCompatActivity {
 
     private SeekBar red, green, blue;
     private ImageView zdjecie;
+    private ImageView zdjecie2;
     private int r = 0, g = 0, b = 0;
-    ImageView zdjecie2;
+
     private final int GALLERY_REQ_CODE = 1000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         green = findViewById(R.id.s2);
         blue = findViewById(R.id.s3);
         zdjecie = findViewById(R.id.txt2);
-
+        zdjecie2 = findViewById(R.id.txt3);
         red.setMax(255);
         green.setMax(255);
         blue.setMax(255);
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
          zdjecie =(ImageView) findViewById(R.id.txt2);
         zdjecie.setImageResource(R.drawable.images);
 
-
+        zdjecie2 =(ImageView) findViewById(R.id.txt3);
         red.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
@@ -114,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ustawKolor(int r, int g, int b){
-        zdjecie.setBackgroundColor(Color.rgb(r, g, b));
+        zdjecie2.setBackgroundColor(Color.rgb(r, g, b));
     }
 
     @Override

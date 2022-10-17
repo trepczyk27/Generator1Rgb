@@ -25,6 +25,15 @@
         android:layout_centerHorizontal="true" />
 
 
+
+        <ImageView
+            android:id="@+id/txt3"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_below="@id/txt1"
+            android:layout_centerHorizontal="true"
+            />
+
     <TextView
         android:id="@+id/R"
         android:layout_width="wrap_content"
