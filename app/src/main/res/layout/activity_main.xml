@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Edytuj zdjecie"
+        android:text="Kacper Trepczyk"
         android:textSize="30dp" />
 
     <ImageView
@@ -24,9 +24,39 @@
         android:layout_below="@id/txt1"
         android:layout_centerHorizontal="true" />
 
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/s4"
+        android:id="@+id/s5"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp">
 
+    </SeekBar>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/s5"
+        android:id="@+id/s6"
+       android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp">
 
-        <ImageView
+    </SeekBar>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OP"
+        android:id="@+id/b1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="570dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OL"
+        android:id="@+id/b2"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="570dp"/>
+    <ImageView
             android:id="@+id/txt3"
             android:layout_width="250dp"
             android:layout_height="250dp"
@@ -43,7 +73,33 @@
         android:layout_marginTop="15dp"
         android:text="R"
         android:textSize="25dp" />
-
+    <TextView
+        android:id="@+id/txT4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/B"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="A"
+        android:textSize="25dp" />
+    <TextView
+        android:id="@+id/txT6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txT4"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:text="ZI"
+        android:textSize="25dp" />
+    <TextView
+        android:id="@+id/txT7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txT6"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:text="ZO"
+        android:textSize="25dp" />
     <SeekBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -99,7 +155,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="600dp"
+        android:layout_marginTop="570dp"
 
         android:text="wczytaj zdjecie" />
 </RelativeLayout>
