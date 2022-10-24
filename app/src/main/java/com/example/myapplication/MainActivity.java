@@ -19,7 +19,7 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    private SeekBar red, green, blue;
+    private SeekBar red, green, blue,seek4;
     private ImageView zdjecie;
     private ImageView zdjecie2;
     private int r = 0, g = 0, b = 0;
@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         red = findViewById(R.id.s1);
         green = findViewById(R.id.s2);
         blue = findViewById(R.id.s3);
+        seek4 =findViewById(R.id.s4);
         zdjecie = findViewById(R.id.txt2);
         zdjecie2 = findViewById(R.id.txt3);
         red.setMax(255);
@@ -59,57 +60,52 @@ public class MainActivity extends AppCompatActivity {
         zdjecie.setImageResource(R.drawable.images);
 
         zdjecie2 =(ImageView) findViewById(R.id.txt3);
+        seek4.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+            }
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+            }
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                zdjecie.setColorFilter((Color.argb(seek4.getProgress(), red.getProgress(), green.getProgress(), blue.getProgress())));
+            }
+        });
         red.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                r = progress;
-                ustawKolor(r, g, b);
+            public void onStopTrackingTouch(SeekBar seekBar) {
             }
-
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-
             }
-
             @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                zdjecie.setColorFilter((Color.argb(seek4.getProgress(), red.getProgress(), green.getProgress(), blue.getProgress())));
             }
         });
-
         green.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                g = progress;
-                ustawKolor(r, g, b);
+            public void onStopTrackingTouch(SeekBar seekBar) {
             }
-
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-
             }
-
             @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                zdjecie.setColorFilter((Color.argb(seek4.getProgress(), red.getProgress(), green.getProgress(), blue.getProgress())));
             }
         });
-
         blue.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                b = progress;
-                ustawKolor(r, g, b);
+            public void onStopTrackingTouch(SeekBar seekBar) {
             }
-
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-
             }
-
             @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                zdjecie.setColorFilter((Color.argb(seek4.getProgress(), red.getProgress(), green.getProgress(), blue.getProgress())));
             }
         });
     }
